@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio - CV Online</title>
+
+    <style>
+ /* ESTILO GERAL DO MENU DE CABEÇALHO*/     
+ #topo{
+  background-color: #300000;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  padding: 15px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+ /*ESTILO DOS SUBTÍTULOS*/
+ .subtitle{
+    color:black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ESTILO DOS LINKS DO CABEÇALHO */
+ #topo a:link, #topo a:visited{
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+ }
+
+ #topo a:hover{
+    color: #300000;
+    background-color: white;
+    border-radius: 15%;
+ }
+ /*ESTILO DA MINHA FOTO PESSOAL*/
+ .foto-pessoal{
+    border-radius: 70%;
+    float:left;
+    width: 400px;
+    height: 400px;
+    position: fixed;
+ }
+
+ /*ESTILO DOS PARÁGRAFOS*/
+ p{
+    width: 1000px;
+    float: right;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+ /*ESTILO DAS SESSÕES (LINKS)*/
+ .sessao{
+   width: 1000px;
+   float: right;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   border-style: inset;
+   border-radius: 5px;
+   border-color: black;
+   padding-left: 10px;
+ }
+
+ /*ESTILO DAS LISTAS*/
+ ul{
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 16px;
+   padding: 10px;
+   width: 1050px;
+ }
+ /*ESTILOS FORMULARIO*/
+ input{
+   border-style:solid;
+   border-radius: 20px;
+   border-color: #300000;
+ }
+
+ button{
+   border-radius: 10px;
+   background-color: #300000;
+   width: 70px;
+   height: 30px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: aliceblue;
+ }
+    </style>
+</head>
+
+<body>
+ <!-- CABEÇALHO (MENU)-->  
+<header>
+        
+   <nav id="topo">
+      <h1 style="font-size: 50px; color: white;">Guilherme Alves de Campos</h1>
+      <a  href="#sobremim">Sobre mim</a>
+      <a  href="#formacao">Formação</a>
+      <a  href="#portfolio">Portfólio</a>
+      <a  href="#contato">Contato</a>
+
+   
+</nav>
+</header>
+<img class="foto-pessoal" src="imagens/eu1.jpg">
+
+<!-- SESSÃO: SOBRE MIM -->
+<div id="sobremim">
+<div class="sessao">
+<p style= "margin-top: 215px;"  id="formacao">Me chamo <b>Guilherme</b>, tenho 23 anos (nascido em julho de 2001) e sou casado com uma linda mulher desde 2023. Sou um aprendiz (por hobbie também) da área de tecnologia. Hoje eu já trabalho na área da tecnologia, porém mais voltado à infraestrutura de TI.
+</p>
+<p>E tenho muitos hobbies, mas o que se destacam são: jogar futebol, tomar uma gelada e jogar vídeo-game. </p>
+<p>Além disso, não posso esquecer da minha formação religiosa, como Testemunha de Jeová. Faço parte de uma obra mundial voluntária, que ensina as pessoas a ter uma vida melhor por meio do conhecimento da Bíblia.</p>
+</div>
+</div>
+
+<!-- SESSÃO: FORMAÇÃO -->
+<div class="sessao">
+<h2 class="subtitle" id="portfolio">Formação</h2>
+<ul>
+   <li>Ensino Médio - SESI 085 (2018)</li>
+   <li>Técnico em eletroeletrônica - SENAI (2018 - 2019)</li>
+   <li>Tecnologia em Análise e Desenvolvimento de Sistemas - Uninter (Cursando - 1º semestre)</li>
+</ul>
+
+<ul><strong>IDIOMAS</strong>
+   <li>Inglês: nível intermediário</li>
+   <li>Espanhol: nível intermediário</li>
+</ul>
+
+</div>
+
+
+<!-- SESSÃO: PORTFÓLIO -->
+<div class="sessao">
+   <h2 class="subtitle">Portfólio</h2>
+ <p>O que dizer de um portfólio de um iniciante? Bem, não tem muita coisa. O que tenho são páginas que desenvolvi nas aulas de programação.</p><br>
+ <p>Exemplo 1: <a style="text-decoration: none;" href="formulario.html"> Clique aqui para ver</a></p>
+ <P>Também sou iniciante como analista de sistemas. Mas abaixo está um diagrama de casos de uso que fiz:</P><br>
+ <img src="imagens/Diagrama de casos de uso jpeg.jpg" style="width: 900px;border:solid; border-radius: 10px;">
+ <p>Acompanhe meu progresso para mais...
+
+
+</div>
+
+<!-- SESSÃO: CONTATO -->
+<div class="sessao">
+  <h2>Entre em Contato</h2>
+
+  <!-- FORMULÁRIO DE CONTATO -->
+  <form action="" method="get">
+   <p>Se quiser me contatar, me mande uma mensagem:</p>
+   <label for="input">Me diga o seu nome:</label><br>
+   <input type="text" name="Nome" id="" style="width: 400px;"> <br> <br>
+   <label for="input">Email:</label><br>
+   <input type="email" name="email" id="" style="width: 300px;"> <br><br>
+   <label for="input">Escreva uma mensagem:</label> <br>
+   <input type="text" name="mensagem" id="" style="width: 500px; height: 200px;" rows="10"> <br><br>
+   <button type="submit" id="contato">Enviar</button>
+  </form>
+</div>
+
+
+
+</body>
+</html>
